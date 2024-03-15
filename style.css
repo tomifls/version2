@@ -1,0 +1,267 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-image: url(/multimedia/huellita.jpg);
+  background-size: 100px;
+  background-repeat: space;
+  resize: both;
+  overflow: auto;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.9);
+  left: 0;
+  top: 0;
+  height: 117px;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav-link{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.titulo{
+  font-size: 60px;
+  padding: 6px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 100px;
+  color: saddlebrown;
+  float: left;
+  background-color: black;
+}
+
+.nav-menu{
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+
+}
+
+.nav-menu-item{
+  font-size: 20px;
+  margin: 0 10px;
+  line-height: 100px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link{ 
+  padding: 8px 12px;
+  border-radius: 15px;
+}
+
+.nav-menu-link:hover{
+  background-color: #034576;
+  transition: 0.2s;
+}
+
+
+
+
+
+
+
+
+
+body{
+  font-family: sans-serif;
+}
+
+p{
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+}
+
+.sombras{
+  text-shadow: 3px 3px whitesmoke;
+}
+
+.introduccion{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.parrafo1{
+  color: whitesmoke;
+  font-size: 20px;
+  width: 20%;
+  padding: 20px;
+  background-color: #034576;
+  border-radius: 10px;
+  border: solid black;
+}
+
+.parrafo2{
+  color: whitesmoke;
+  width: 70%;
+  font-size: 20px;
+  padding: 20px;
+  background-color: #034576;
+  border-radius: 10px;
+  border: solid black;
+}
+
+.secciones{
+  background-color: grey;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+  border: solid black;
+}
+
+.imagenes1{
+  object-fit: cover;
+  width: 300px;
+  height: 700px;
+}
+
+.maschiquito{
+  width: 70%;
+}
+
+
+.seccion {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Espacio entre columnas */
+}
+
+.columna {
+  text-align: center;
+}
+
+.columna img {
+  width: 30px; /* La imagen ocupará todo el ancho de su contenedor */
+  height: 300px; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
+.columna p {
+  margin: 10px 0;
+}
+
+.nleft1, .nleft1{
+  height: 250px;
+  background-color: whitesmoke;
+  background-image: url(multimedia/perro.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 150px;
+  border: solid black;
+}
+
+.nleft2, .nleft2{
+  height: 250px;
+  background-color: whitesmoke;
+  background-image: url(multimedia/gato.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 150px;
+  border: solid black;
+}
+
+.nleft3, .nleft3{
+  height: 250px;
+  background-color: whitesmoke;
+  background-image: url(multimedia/AVES.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 150px;
+  border: solid black;
+}
+
+
+.nright{
+  padding: 20px;
+}
+
+.nright, .nleft{
+  width: 50%;
+}
+
+.grilla1{
+  display: flex;
+}
+
+.animales{
+  color: skyblue;
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+footer{
+  width: 100%;
+  font-family: sans-serif;
+  background-color: rgb(0, 0, 0);
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+.footer-row{
+  display: flex;
+}
+.footer-links{                          
+  justify-content: space-between;
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-links h4{
+  font-size: 20px;
+  color: azure;
+  margin-top: 25px;
+  font-weight: 500px;
+  border-bottom: 2px solid #00C3FF;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.footer-links ul li a{
+  font-size: 18px;
+  text-decoration: none;
+  color: darkgray;
+  display: block;
+  margin-top: 15px;
+  transition: all .3s ease;
+  margin-left: 0px;
+}
+
+.footer-links ul li a:hover{
+  color: lightseagreen;
+  padding-left: 6px;
+}
+
+.social-links a{
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all .5s ease;
+  padding-left: 6px;
+}
+
+.social-links a:hover{
+  color: lightseagreen;
+  padding-left: 6px;
+}
