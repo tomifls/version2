@@ -1,9 +1,11 @@
-*{
+@charset "UTF-8";
+* {
   margin: 0px;
   padding: 0px;
+  max-width: 10000px;
 }
 
-body{
+body {
   background-image: url(/multimedia/huellita.jpg);
   background-size: 100px;
   background-repeat: space;
@@ -20,20 +22,20 @@ body{
   z-index: 10;
 }
 
-.nav{
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
 
-.nav-link{
+.nav-link {
   color: #ffffff;
   text-decoration: none;
 }
 
-.titulo{
-  font-size: 60px;
+.titulo {
+  font-size: 50px;
   padding: 6px;
   font-weight: bold;
   padding: 0 40px;
@@ -43,58 +45,49 @@ body{
   background-color: black;
 }
 
-.nav-menu{
+.nav-menu {
   display: flex;
   margin-right: 40px;
   list-style: none;
-
 }
 
-.nav-menu-item{
-  font-size: 20px;
-  margin: 0 10px;
+.nav-menu-item {
+  font-size: 15px;
+  margin: 0 5px;
   line-height: 100px;
   text-transform: uppercase;
   width: max-content;
 }
 
-.nav-menu-link{ 
+.nav-menu-link {
   padding: 8px 12px;
   border-radius: 15px;
 }
 
-.nav-menu-link:hover{
+.nav-menu-link:hover {
   background-color: #034576;
   transition: 0.2s;
 }
 
-
-
-
-
-
-
-
-
-body{
+body {
   font-family: sans-serif;
 }
 
-p{
-  font-size: 35px;
+p {
+  font-size: 25px;
   color: rgb(0, 0, 0);
 }
 
-.sombras{
+.sombras {
   text-shadow: 3px 3px whitesmoke;
 }
 
-.introduccion{
+.introduccion {
   display: flex;
   justify-content: space-evenly;
 }
 
-.parrafo1{
+.parrafo1 {
   color: whitesmoke;
   font-size: 20px;
   width: 20%;
@@ -104,7 +97,7 @@ p{
   border: solid black;
 }
 
-.parrafo2{
+.parrafo2 {
   color: whitesmoke;
   width: 70%;
   font-size: 20px;
@@ -114,7 +107,7 @@ p{
   border: solid black;
 }
 
-.secciones{
+.secciones {
   background-color: grey;
   text-align: center;
   padding: 20px;
@@ -123,16 +116,24 @@ p{
   border: solid black;
 }
 
-.imagenes1{
-  object-fit: cover;
-  width: 300px;
-  height: 700px;
+.izq {
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+  border: #034576 solid;
+  border-radius: 15px;
+  padding: 5px;
 }
 
-.maschiquito{
+.imagenes1 {
+  object-fit: cover;
+  max-width: 100%; /* Establece el ancho máximo de las imágenes al ancho máximo del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la relación de aspecto */
+  max-height: 600px; /* Establece la altura máxima de las imágenes */
+}
+
+.maschiquito {
   width: 70%;
 }
-
 
 .seccion {
   display: grid;
@@ -145,15 +146,15 @@ p{
 }
 
 .columna img {
-  width: 30px; /* La imagen ocupará todo el ancho de su contenedor */
-  height: 300px; /* La altura se ajustará automáticamente para mantener la proporción */
+  width: 30px;
+  height: 300px;
 }
 
 .columna p {
   margin: 10px 0;
 }
 
-.nleft1, .nleft1{
+.nleft1, .nleft1 {
   height: 250px;
   background-color: whitesmoke;
   background-image: url(multimedia/perro.jpg);
@@ -163,7 +164,7 @@ p{
   border: solid black;
 }
 
-.nleft2, .nleft2{
+.nleft2, .nleft2 {
   height: 250px;
   background-color: whitesmoke;
   background-image: url(multimedia/gato.jpg);
@@ -173,7 +174,7 @@ p{
   border: solid black;
 }
 
-.nleft3, .nleft3{
+.nleft3, .nleft3 {
   height: 250px;
   background-color: whitesmoke;
   background-image: url(multimedia/AVES.jpg);
@@ -183,48 +184,94 @@ p{
   border: solid black;
 }
 
-
-.nright{
+.nright {
   padding: 20px;
 }
 
-.nright, .nleft{
+.nright, .nleft {
   width: 50%;
 }
 
-.grilla1{
+.grilla1 {
   display: flex;
 }
 
-.animales{
+.animales {
   color: skyblue;
   font-size: 45px;
   margin-bottom: 15px;
 }
 
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 
+h2 {
+  text-align: center;
+}
 
+.form-group {
+  margin-bottom: 20px;
+}
 
+label {
+  display: block;
+  font-weight: bold;
+}
 
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-footer{
+textarea {
+  resize: vertical;
+}
+
+button[type=submit] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type=submit]:hover {
+  background-color: #0056b3;
+}
+
+footer {
   width: 100%;
   font-family: sans-serif;
   background-color: rgb(0, 0, 0);
   padding: 10px 0;
   flex-wrap: wrap;
 }
-.footer-row{
+
+.footer-row {
   display: flex;
 }
-.footer-links{                          
+
+.footer-links {
   justify-content: space-between;
   width: 25%;
   padding: 0 15px;
 }
 
-.footer-links h4{
-  font-size: 20px;
+.footer-links h4 {
+  font-size: 15px;
   color: azure;
   margin-top: 25px;
   font-weight: 500px;
@@ -232,22 +279,23 @@ footer{
   padding-bottom: 10px;
   display: inline-block;
 }
-.footer-links ul li a{
+
+.footer-links ul li a {
   font-size: 18px;
   text-decoration: none;
   color: darkgray;
   display: block;
   margin-top: 15px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   margin-left: 0px;
 }
 
-.footer-links ul li a:hover{
+.footer-links ul li a:hover {
   color: lightseagreen;
   padding-left: 6px;
 }
 
-.social-links a{
+.social-links a {
   display: inline-block;
   min-height: 40px;
   width: 40px;
@@ -257,11 +305,13 @@ footer{
   line-height: 40px;
   border-radius: 50%;
   color: #ffffff;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   padding-left: 6px;
 }
 
-.social-links a:hover{
+.social-links a:hover {
   color: lightseagreen;
   padding-left: 6px;
 }
+
+/*# sourceMappingURL=style.css.map */
